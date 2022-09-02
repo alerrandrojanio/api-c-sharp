@@ -25,3 +25,17 @@ C:\Users\ale\Documents\GitHub\api-c-sharp\obj\Debug\net6.0\refint\api-c-sharp.dl
 C:\Users\ale\Documents\GitHub\api-c-sharp\obj\Debug\net6.0\api-c-sharp.pdb
 C:\Users\ale\Documents\GitHub\api-c-sharp\obj\Debug\net6.0\api-c-sharp.genruntimeconfig.cache
 C:\Users\ale\Documents\GitHub\api-c-sharp\obj\Debug\net6.0\ref\api-c-sharp.dll
+C:\Users\ale\Documents\GitHub\api-c-sharp\bin\Debug\net6.0\Humanizer.dll
+C:\Users\ale\Documents\GitHub\api-c-sharp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\ale\Documents\GitHub\api-c-sharp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ale\Documents\GitHub\api-c-sharp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ale\Documents\GitHub\api-c-sharp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\ale\Documents\GitHub\api-c-sharp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ale\Documents\GitHub\api-c-sharp\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ale\Documents\GitHub\api-c-sharp\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ale\Documents\GitHub\api-c-sharp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ale\Documents\GitHub\api-c-sharp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ale\Documents\GitHub\api-c-sharp\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\ale\Documents\GitHub\api-c-sharp\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ale\Documents\GitHub\api-c-sharp\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\ale\Documents\GitHub\api-c-sharp\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll

@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using src.Models;
+using src.Persistence;
+using Microsoft.EntityFrameworkCore;
 
 namespace src.Controllers;
 
@@ -7,32 +9,43 @@ namespace src.Controllers;
 [Route("[controller]")]
 public class PessoaController : ControllerBase{
 
-    [HttpGet]
-    public Pessoa get(){
-        Pessoa pessoa = new Pessoa("ale", 23, "12345678");
-        Contrato contrato = new Contrato("abc123", 50.43);
-        Contrato contrato2 = new Contrato("123abc", 27.09);
+    private DatabaseContext _context { get; set; }
 
-        pessoa.Contratos.Add(contrato);
-        pessoa.Contratos.Add(contrato2);
-        
-        return pessoa;
+    public PessoaController(DatabaseContext context){
+        this._context = context;
+    }
+
+    [HttpGet]
+    public List<Pessoa> get(){
+        //Pessoa pessoa = new Pessoa("ale", 23, "12345678");
+        //Contrato contrato = new Contrato("abc123", 50.43);
+        //pessoa.Contratos.Add(contrato);
+
+        return _context.Pessoas.Include( p => p.Contratos).ToList();
     }
 
     [HttpPost]
-    public Pessoa Post(Pessoa pessoa){
+    public Pessoa Post([FromBody]Pessoa pessoa){
+        _context.Pessoas.Add(pessoa);
+        _context.SaveChanges();
+
         return pessoa;
     }
 
     [HttpPut("{id}")]
     public string Update([FromRoute]int id, [FromBody]Pessoa pessoa){
-        Console.WriteLine(id);
-        Console.WriteLine(pessoa);
+        _context.Pessoas.Update(pessoa);
+        _context.SaveChanges();
+
         return "Dados do id " + id + " atualizados!";
     }
 
     [HttpDelete("{id}")]
     public string Delete([FromRoute]int id){
+        var result = _context.Pessoas.SingleOrDefault(e => e.Id == id);
+
+        _context.Pessoas.Remove(result);
+        _context.SaveChanges();
 
         return "Deletada pessoa de " + id; 
     }
