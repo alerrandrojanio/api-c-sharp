@@ -1,4 +1,4 @@
-# api-c-sharp
+# api-pessoas-contatos
 
 <div>Projeto de API em C# da POTTENCIAL DEV WEEK do DIO</div>
 
@@ -7,4 +7,3 @@
 - C#
 - Nuget
 - Entity Framework Core (Design, InMemory)
-- 
